@@ -73,7 +73,7 @@ logging.basicConfig(filename='eval.log',
                     filemode='w',
                     format='%(asctime)s.%(msecs)03d %(name)s %(levelname)s %(message)s',
                     datefmt='%H:%M:%S')
-coloredlogs.install(level='INFO')
+coloredlogs.install(level='INFO', logger=logger)
 
 
 class Box3dEvaluator:
